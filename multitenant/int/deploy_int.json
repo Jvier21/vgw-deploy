@@ -1,0 +1,319 @@
+
+{
+        "kind": "Deployment",
+        "apiVersion": "apps/v1",
+        "metadata": {
+                "name": "vgw-int-multitenant-deployment",
+                "creationTimestamp": null
+        },
+        "spec": {
+                "replicas": 1,
+                "selector": {
+                        "matchLabels": {
+                                "service": "vgw-multitenant"
+                        }
+                },
+                "template": {
+                        "metadata": {
+                                "creationTimestamp": null,
+                                "labels": {
+                                        "service": "vgw-multitenant",
+                                        "client": "demo",
+                                        "tts_provider": "watson",
+                                        "nlp_provider": "watson",
+                                        "stt_provider": "watson"
+                                }
+                        },
+                        "spec": {
+                                "volumes": [
+                                        {
+                                                "name": "recordings",
+                                                "emptyDir": {}
+                                        },
+                                        {
+                                                "name": "cfgmap",
+                                                "configMap": {
+                                                        "name": "mrcp-config"
+                                                }
+                                        }
+                                ],
+                                "hostNetwork": true,
+                                "imagePullSecrets": [
+                                        {
+                                                "name": "admin.registrykey"
+                                        }
+                                ],
+                                "containers": [
+                                        {
+                                                "name": "vgw-int-multitenant-vgw-mr",
+                                                "image": "ibmcom/voice-gateway-mr:latest",
+                                                "livenessProbe": {
+                                                        "exec": {
+                                                                "command": [
+                                                                        "/bin/sh",
+                                                                        "-ec",
+                                                                        "cutoffdate=$(date +%u%H); testresult=$(test $cutoffdate -eq 307 && echo 1 || echo 0); exit $testresult"
+                                                                ]
+                                                        },
+                                                        "failureThreshold": 1,
+                                                        "initialDelaySeconds": 3600,
+                                                        "periodSeconds": 60
+                                                },
+                                                "ports": [
+                                                        {
+                                                                "containerPort": 6202,
+                                                                "hostPort": 6202,
+                                                                "protocol": "TCP"
+                                                        },
+                                                        {
+                                                                "containerPort": 5557,
+                                                                "hostPort": 5557,
+                                                                "protocol": "TCP"
+                                                        },
+                                                        {
+                                                                "containerPort": 5557,
+                                                                "hostPort": 5557,
+                                                                "protocol": "UDP"
+                                                        }
+                                                ],
+                                                "lifecycle": {
+                                                        "preStop": {
+                                                                "exec": {
+                                                                        "command": [
+                                                                                "/opt/quiesce.sh"
+                                                                        ]
+                                                                }
+                                                        }
+                                                },
+                                                "env": [
+                                                        {
+                                                                "name": "SDP_ADDRESS",
+                                                                "value": "200.62.8.140"
+                                                        },
+                                                        {
+                                                                "name": "ENABLE_RECORDING",
+                                                                "value": "false"
+                                                        },
+                                                        {
+                                                                "name": "RTP_UDP_PORT_RANGE",
+                                                                "value": "15000-25000"
+                                                        },
+                                                        {
+                                                                "name": "CLUSTER_WORKERS",
+                                                                "value": "0"
+                                                        },
+                                                        {
+                                                                "name": "MEDIA_RELAY_LOG_LEVEL",
+                                                                "value": "DEBUG"
+                                                        },
+                                                        {
+                                                                "name": "MEDIA_RELAY_LOG_ROTATION_FILE_COUNT",
+                                                                "value": "14"
+                                                        },
+                                                        {
+                                                                "name": "MEDIA_RELAY_WS_PORT",
+                                                                "value": "6202"
+                                                        },
+                                                        {
+                                                                "name": "DISABLE_STT_DURING_PLAYBACK",
+                                                                "value": "true"
+                                                        },
+                                                        {
+                                                                "name": "STT_TRACK_LATENCY",
+                                                                "value": "true"
+                                                        },
+                                                        {
+                                                                "name": "RTCP_MAX_PACKET_LOSS_THRESHOLD",
+                                                                "value": "1"
+                                                        }
+                                                ],
+                                                "resources": {},
+                                                "volumeMounts": [
+                                                        {
+                                                                "name": "recordings",
+                                                                "mountPath": "/vgw-media-relay/recordings"
+                                                        }
+                                                ],
+                                                "terminationMessagePath": "/dev/termination-log",
+                                                "imagePullPolicy": "Always"
+                                        },
+                                        {
+                                                "name": "vgw-int-multitenant-vgw-so",
+                                                "image": "ibmcom/voice-gateway-so:latest",
+                                                "livenessProbe": {
+                                                        "exec": {
+                                                                "command": [
+                                                                        "/bin/sh",
+                                                                        "-ec",
+                                                                        "cutoffdate=$(date +%u%H); testresult=$(test $cutoffdate -eq 307 && echo 1 || echo 0); exit $testresult"
+                                                                ]
+                                                        },
+                                                        "failureThreshold": 1,
+                                                        "initialDelaySeconds": 3600,
+                                                        "periodSeconds": 60
+                                                },
+                                                "ports": [
+                                                        {
+                                                                "containerPort": 30202,
+                                                                "hostPort": 30202,
+                                                                "protocol": "TCP"
+                                                        },
+                                                        {
+                                                                "containerPort": 30202,
+                                                                "hostPort": 30202,
+                                                                "protocol": "UDP"
+                                                        }
+                                                ],
+                                                "lifecycle": {
+                                                        "preStop": {
+                                                                "exec": {
+                                                                        "command": [
+                                                                                "/opt/quiesce.sh"
+                                                                        ]
+                                                                }
+                                                        }
+                                                },
+                                                "env": [
+                                                        {
+                                                                "name": "SIP_HOST",
+                                                                "value": "200.62.8.140"
+                                                        },
+                                                        {
+                                                                "name": "MEDIA_RELAY_HOST",
+                                                                "value": "localhost:6202"
+                                                        },
+                                                        {
+                                                                "name": "SIP_PORT",
+                                                                "value": "30202"
+                                                        },
+                                                        {
+                                                                "name": "SIP_PORT_TCP",
+                                                                "value": "30202"
+                                                        },
+                                                        {
+                                                                "name": "JMS_PORT",
+                                                                "value": "7278"
+                                                        },
+                                                        {
+                                                                "name": "JMS_PORT_SSL",
+                                                                "value": "7288"
+                                                        },
+                                                        {
+                                                                "name": "ENABLE_AUDIT_MESSAGES",
+                                                                "value": "true"
+                                                        },
+                                                        {
+                                                                "name": "ENABLE_TRANSCRIPTION_AUDIT_MESSAGES",
+                                                                "value": "true"
+                                                        },
+                                                        {
+                                                                "name": "LOG_LEVEL",
+                                                                "value": "all"
+                                                        },
+                                                        {
+                                                                "name": "LOG_MAX_FILES",
+                                                                "value": "14"
+                                                        },
+                                                        {
+                                                                "name": "LOG_MAX_FILE_SIZE",
+                                                                "value": "500"
+                                                        },
+                                                        {
+                                                                "name": "SEND_SIP_CALL_ID_TO_CONVERSATION",
+                                                                "value": "true"
+                                                        },
+                                                        {
+                                                                "name": "SEND_SIP_REQUEST_URI_TO_CONVERSATION",
+                                                                "value": "true"
+                                                        },
+                                                        {
+                                                                "name": "SEND_SIP_TO_URI_TO_CONVERSATION",
+                                                                "value": "true"
+                                                        },
+                                                        {
+                                                                "name": "SEND_SIP_FROM_URI_TO_CONVERSATION",
+                                                                "value": "true"
+                                                        },
+                                                        {
+                                                                "name": "REPORTING_URL",
+                                                                "value": "http://vgw-reporting.services.smartia-ai.com/vgw/report"
+                                                        },
+                                                        {
+                                                                "name": "REPORTING_CDR_EVENT_INDEX",
+                                                                "value": "cdr"
+                                                        },
+                                                        {
+                                                                "name": "REPORTING_CONVERSATION_EVENT_INDEX",
+                                                                "value": "conversation"
+                                                        },
+                                                        {
+                                                                "name": "REPORTING_TRANSCRIPTION_EVENT_INDEX",
+                                                                "value": "transcription"
+                                                        },
+                                                        {
+                                                                "name": "MULTI_TENANT_CONFIG_FILE",
+                                                                "value": "/mnt/tenantConfiguration_int.json"
+                                                        },
+                                                        {
+                                                                "name": "CONVERSATION_FAILED_REPLY_MESSAGE",
+                                                                "value": "Lo volveremos a llamar. Disculpe las molestias."
+                                                        },
+                                                        {
+                                                                "name": "METRICS_SAMPLING_INTERVAL",
+                                                                "value": "1"
+                                                        },
+                                                        {
+                                                                "name": "ENABLE_METRICS_AUTH",
+                                                                "value": "false"
+                                                        },
+                                                        {
+                                                                "name": "HTTP_HOST",
+                                                                "value": "172.16.220.51"
+                                                        },
+                                                        {
+                                                                "name": "HTTP_PORT",
+                                                                "value": "9082"
+                                                        },
+                                                        {
+                                                                "name": "HTTPS_PORT",
+                                                                "value": "9445"
+                                                        },
+                                                        {
+                                                                "name": "ADMIN_USERNAME",
+                                                                "value": "None"
+                                                        },
+                                                        {
+                                                                "name": "ADMIN_PASSWORD",
+                                                                "value": "None"
+                                                        }
+                                                ],
+                                                "resources": {
+                                                        "requests": {
+                                                                "cpu": "1",
+                                                                "memory": "2Gi"
+                                                                },
+                                                        "limits": {
+                                                                "cpu": "1.5",
+                                                                "memory": "5Gi"
+                                                                }
+                                                        },
+                                                "volumeMounts": [
+                                                        {
+                                                                "name": "cfgmap",
+                                                                "mountPath": "/mnt/tenantConfiguration_int.json",
+                                                                "subPath": "tenantConfiguration_int.json"
+                                                        }
+                                                ],
+                                                "terminationMessagePath": "/dev/termination-log",
+                                                "imagePullPolicy": "Always"
+                                        }
+                                ],
+                                "restartPolicy": "Always",
+                                "terminationGracePeriodSeconds": 30,
+                                "dnsPolicy": "ClusterFirst",
+                                "securityContext": {}
+                        }
+                }
+        },
+        "status": {}
+}

@@ -1,0 +1,260 @@
+{
+    "tenants": [
+             {
+                "tenantURI": "SmartIA Gen 5006",
+                "description": "SmartIA Gen 5006",
+                "URIs": [
+                        {
+                                "name": "smartiagen5006",
+                                "uri": "smartiagen5006"
+                        }
+                ],
+                "conversation": {
+                        "url": "http://genbot-nlp-adapter.services.smartia-ai.com/dialogflow",
+                        "workspaceID": "xxxx",
+                        "password": "xxxx",
+                        "username": "xxxx"
+                },
+                "stt": {
+                        "providerSelectionPolicy": "sequential",
+                        "providers": [
+                                {
+                                        "name": "nvidia-stt",
+                                        "providerType": "watson",
+                                        "credentials": {
+                                                "url": "http://stt-multitenant-ts.nvidiaservices2.smartia-ai.com",
+                                                "username": "",
+                                                "password": ""
+                                        }
+                                }
+                        ],
+                        "trackLatency": true
+                },
+                "tts": {
+                        "providerSelectionPolicy": "sequential",
+                        "providers": [
+                                {
+                                        "name": "azure-tts",
+                                        "providerType": "watson",
+                                        "credentials": {
+                                                "url": "http://10.0.0.11:8001",
+                                                "username": "",
+                                                "password": ""
+                                        }
+                                }
+                        ]
+                },
+                "reporting": {
+                        "url": "http://vgw-reporting.services.smartia-ai.com/vgw/report",
+                        "cdrEventInd": "cdr",
+                        "convEventInd": "conversation",
+                        "transcriptionEventInd": "transcription"
+                }
+            },
+            {
+                "tenantURI": "MX Gen 5027",
+                "description": "MX Gen 5027",
+                "URIs": [
+                        {
+                                "name": "mxgen5027",
+                                "uri": "mxgen5027"
+                        }
+                ],
+                "conversation": {
+                        "url": "http://generic-nlp-adapter.services.smartia-ai.com/dialogflow",
+                        "workspaceID": "xxxx",
+                        "password": "xxxx",
+                        "username": "xxxx"
+                },
+                "stt": {
+                        "providerSelectionPolicy": "sequential",
+                        "providers": [
+                                {
+                                        "name": "nvidia-stt",
+                                        "providerType": "watson",
+                                        "credentials": {
+                                                "url": "http://stt-multitenant-ts.nvidiaservices2.smartia-ai.com",
+                                                "username": "",
+                                                "password": ""
+                                        }
+                                }
+                        ],
+                        "trackLatency": true
+                },
+                "tts": {
+                        "providerSelectionPolicy": "sequential",
+                        "providers": [
+                                {
+                                        "name": "azure-tts",
+                                        "providerType": "watson",
+                                        "credentials": {
+                                                "url": "http://10.0.0.11:8001",
+                                                "username": "",
+                                                "password": ""
+                                        }
+                                }
+                        ]
+                },
+                "reporting": {
+                        "url": "http://vgw-reporting.services.smartia-ai.com/vgw/report",
+                        "cdrEventInd": "cdr",
+                        "convEventInd": "conversation",
+                        "transcriptionEventInd": "transcription"
+                }
+            },
+            {
+                "tenantURI": "CO Gen 5024",
+                "description": "CO Gen 5024",
+                "URIs": [
+                        {
+                                "name": "cogen5024",
+                                "uri": "cogen5024"
+                        }
+                ],
+                "conversation": {
+                        "url": "http://generic-nlp-adapter.services.smartia-ai.com/dialogflow",
+                        "workspaceID": "xxxx",
+                        "password": "xxxx",
+                        "username": "xxxx"
+                },
+                "stt": {
+                        "providerSelectionPolicy": "sequential",
+                        "providers": [
+                                {
+                                        "name": "nvidia-stt",
+                                        "providerType": "watson",
+                                        "credentials": {
+                                                "url": "http://stt-multitenant-ts.nvidiaservices2.smartia-ai.com",
+                                                "username": "",
+                                                "password": ""
+                                        }
+                                }
+                        ],
+                        "trackLatency": true
+                },
+                "tts": {
+                        "providerSelectionPolicy": "sequential",
+                        "providers": [
+                                {
+                                        "name": "azure-tts",
+                                        "providerType": "watson",
+                                        "credentials": {
+                                                "url": "http://10.0.0.11:8001",
+                                                "username": "",
+                                                "password": ""
+                                        }
+                                }
+                        ]
+                },
+                "reporting": {
+                        "url": "http://vgw-reporting.services.smartia-ai.com/vgw/report",
+                        "cdrEventInd": "cdr",
+                        "convEventInd": "conversation",
+                        "transcriptionEventInd": "transcription"
+                }
+            },
+            {
+                    "tenantURI": "SmartIA Azure TTS",
+                    "description": "SmartIA Azure TTS",
+                    "URIs": [
+                            {
+                                    "name": "smartiaAzureTTS",
+                                    "uri": "smartiaAzureTTS"
+                            }
+                    ],
+                    "conversation": {
+                            "url": "http://generic-nlp-adapter.services.smartia-ai.com/dialogflow",
+                            "workspaceID": "xxxx",
+                            "password": "xxxx",
+                            "username": "xxxx"
+                    },
+                    "stt": {
+                            "providerSelectionPolicy": "sequential",
+                            "providers": [
+                                    {
+                                            "name": "nvidia-stt",
+                                            "providerType": "watson",
+                                            "credentials": {
+                                                    "url": "http://stt-multitenant-ts.nvidiaservices2.smartia-ai.com",
+                                                    "username": "",
+                                                    "password": ""
+                                            }
+                                    }
+                            ],
+                            "trackLatency": true
+                    },
+                    "tts": {
+                            "providerSelectionPolicy": "sequential",
+                            "providers": [
+                                    {
+                                            "name": "azure-tts",
+                                            "providerType": "watson",
+                                            "credentials": {
+                                                    "url": "http://10.0.0.11:8001",
+                                                    "username": "",
+                                                    "password": ""
+                                            }
+                                    }
+                            ]
+                    },
+                    "reporting": {
+                            "url": "http://vgw-reporting.services.smartia-ai.com/vgw/report",
+                            "cdrEventInd": "cdr",
+                            "convEventInd": "conversation",
+                            "transcriptionEventInd": "transcription"
+                    }
+            },
+            {
+                "tenantURI": "SmartIA TTS Test",
+                "description": "SmartIA TTS Test",
+                "URIs": [
+                        {
+                                "name": "smartiaTTSTest",
+                                "uri": "smartiaTTSTest"
+                        }
+                ],
+                "conversation": {
+                        "url": "http://mrcp-transfer-nlp-adapter.services.smartia-ai.com/user/10103/dialogflow",
+                        "workspaceID": "ivr-generico-qcpu",
+                        "password": "xxxx",
+                        "username": "xxxx"
+                },
+                "stt": {
+                        "providerSelectionPolicy": "sequential",
+                        "providers": [
+                                {
+                                        "name": "nvidia-stt",
+                                        "providerType": "watson",
+                                        "credentials": {
+                                                "url": "http://stt-multitenant-ts.nvidiaservices2.smartia-ai.com",
+                                                "username": "",
+                                                "password": ""
+                                        }
+                                }
+                        ],
+                        "trackLatency": true
+                },
+                "tts": {
+                        "providerSelectionPolicy": "sequential",
+                        "providers": [
+                                {
+                                        "name": "azure-tts",
+                                        "providerType": "watson",
+                                        "credentials": {
+                                                "url": "http://10.0.0.11:8002",
+                                                "username": "",
+                                                "password": ""
+                                        }
+                                }
+                        ]
+                },
+                "reporting": {
+                        "url": "http://vgw-reporting.services.smartia-ai.com/vgw/report",
+                        "cdrEventInd": "cdr",
+                        "convEventInd": "conversation",
+                        "transcriptionEventInd": "transcription"
+                }
+            }
+
+    ]
+}

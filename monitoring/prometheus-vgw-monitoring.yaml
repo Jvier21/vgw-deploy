@@ -1,0 +1,85 @@
+- job_name: "vgw-dev"
+  scrape_interval: 1s
+  static_configs:
+    - targets: ['172.16.220.51:9080']
+  metrics_path: '/metrics'
+  scheme: 'http'
+  # If you are using HTTPS, replace 'http' with 'https'
+  # and provide the TLS configuration
+  # scheme: 'https'
+  # tls_config:
+  #   insecure_skip_verify: true
+
+- job_name: "vgw-cl"
+  scrape_interval: 1s
+  static_configs:
+    - targets: ['172.16.220.51:9081']
+  metrics_path: '/metrics/'
+  scheme: 'http'
+  # If you are using HTTPS, replace 'http' with 'https'
+  # and provide the TLS configuration
+  # scheme: 'https'
+  # tls_config:
+  #   insecure_skip_verify: true
+
+- job_name: "vgw-int" 
+  scrape_interval: 1s
+  static_configs:
+    - targets: ['172.16.220.51:9082']
+  metrics_path: '/metrics/'
+  scheme: 'http'
+  # If you are using HTTPS, replace 'http' with 'https'
+  # and provide the TLS configuration
+  # scheme: 'https'
+  # tls_config:
+  #   insecure_skip_verify: true
+
+- job_name: "vgw-gen"
+  scrape_interval: 1s
+  static_configs:
+    - targets: ['172.16.220.51:9083']
+  metrics_path: '/metrics/'
+  scheme: 'http'
+  # If you are using HTTPS, replace 'http' with 'https'
+  # and provide the TLS configuration
+  # scheme: 'https'
+  # tls_config:
+  #   insecure_skip_verify: true
+
+  # - job_name: "backend-bot-gen"
+  # scrape_interval: 5s
+  # static_configs:
+  #   - targets: ['genbot-prometheus-exporter.services.smartia-ai.com']
+  # metrics_path: '/metrics'
+  # scheme: 'http'
+  # If you are using HTTPS, replace 'http' with 'https'
+  # and provide the TLS configuration
+  # scheme: 'https'
+  # tls_config:
+  #   insecure_skip_verify: true
+
+#- job_name: "discador-monitoring"
+#  static_configs:
+#    - targets: ['18.228.230.191:9100']
+#  metrics_path: '/metrics'
+#  scheme: 'http'
+
+#- job_name: "asterisk-monitoring"
+#  static_configs:
+#    - targets: ['18.228.230.191:9847']
+#  metrics_path: '/metrics'
+#  scheme: 'http'
+
+- job_name: "nvidia-gpu-monitoring"
+  scrape_interval: 1s
+  static_configs:
+    - targets: ['10.0.0.5:8740']
+  metrics_path: '/metrics'
+  scheme: 'http'
+
+- job_name: "nvidia-node-monitoring"
+  scrape_interval: 1s
+  static_configs:
+    - targets: ['10.0.0.5:9100']
+  metrics_path: '/metrics'
+  scheme: 'http'
