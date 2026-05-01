@@ -87,7 +87,7 @@
                                                 "env": [
                                                         {
                                                                 "name": "SDP_ADDRESS",
-                                                                "value": "200.62.8.140"
+                                                                "value": "172.16.220.51"
                                                         },
                                                         {
                                                                 "name": "ENABLE_RECORDING",
@@ -175,7 +175,7 @@
                                                 "env": [
                                                         {
                                                                 "name": "SIP_HOST",
-                                                                "value": "200.62.8.140"
+                                                                "value": "172.16.220.51"
                                                         },
                                                         {
                                                                 "name": "MEDIA_RELAY_HOST",
