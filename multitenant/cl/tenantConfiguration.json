@@ -48,7 +48,7 @@
                             ]
                     },
                     "reporting": {
-                            "url": "http://vgw-reporting.services.smartia-ai.com/vgw/report",
+                            "url": "http://vgw-reporting.services3.smartia-ai.com/vgw/report",
                             "cdrEventInd": "cdr",
                             "convEventInd": "conversation",
                             "transcriptionEventInd": "transcription"
@@ -102,7 +102,7 @@
                             ]
                     },
                     "reporting": {
-                            "url": "http://vgw-reporting.services.smartia-ai.com/vgw/report",
+                            "url": "http://vgw-reporting.services3.smartia-ai.com/vgw/report",
                             "cdrEventInd": "cdr",
                             "convEventInd": "conversation",
                             "transcriptionEventInd": "transcription"
@@ -156,7 +156,7 @@
                         ]
                 },
                 "reporting": {
-                        "url": "http://vgw-reporting.services.smartia-ai.com/vgw/report",
+                        "url": "http://vgw-reporting.services3.smartia-ai.com/vgw/report",
                         "cdrEventInd": "cdr",
                         "convEventInd": "conversation",
                         "transcriptionEventInd": "transcription"
