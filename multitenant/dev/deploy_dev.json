@@ -87,7 +87,7 @@
                                                 "env": [
                                                         {
                                                                 "name": "SDP_ADDRESS",
-                                                                "value": "128.24.57.99"
+                                                                "value": "172.16.220.51"
                                                         },
                                                         {
                                                                 "name": "ENABLE_RECORDING",
@@ -175,7 +175,7 @@
                                                 "env": [
                                                         {
                                                                 "name": "SIP_HOST",
-                                                                "value": "128.24.57.99"
+                                                                "value": "172.16.220.51"
                                                         },
                                                         {
                                                                 "name": "MEDIA_RELAY_HOST",
@@ -235,7 +235,7 @@
                                                         },
                                                         {
                                                                 "name": "REPORTING_URL",
-                                                                "value": "http://vgw-reporting.services.smartia-ai.com/vgw/report"
+                                                                "value": "http://vgw-reporting.services3.smartia-ai.com/vgw/report"
                                                         },
                                                         {
                                                                 "name": "REPORTING_CDR_EVENT_INDEX",
@@ -267,7 +267,7 @@
                                                         },
                                                         {
                                                                 "name": "HTTP_HOST",
-                                                                "value": "10.0.0.6"
+                                                                "value": "172.16.220.51"
                                                         },
                                                         {
                                                                 "name": "HTTP_PORT",
