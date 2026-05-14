@@ -235,7 +235,7 @@
                                                         },
                                                         {
                                                                 "name": "REPORTING_URL",
-                                                                "value": "http://vgw-reporting.services.smartia-ai.com/vgw/report"
+                                                                "value": "http://vgw-reporting.services3.smartia-ai.com/vgw/report"
                                                         },
                                                         {
                                                                 "name": "REPORTING_CDR_EVENT_INDEX",
