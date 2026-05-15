@@ -10,7 +10,7 @@
                                 }
                         ],
                         "conversation": {
-                                "url": "http://generic-nlp-adapter.services.smartia-ai.com/dialogflow",
+                                "url": "http://generic-nlp-adapter.services3.smartia-ai.com/dialogflow",
                                 "workspaceID": "xxxx",
                                 "password": "xxxx",
                                 "username": "xxxx"
@@ -48,7 +48,7 @@
                                 ]
                         },
                         "reporting": {
-                                "url": "http://vgw-reporting.services.smartia-ai.com/vgw/report",
+                                "url": "http://vgw-reporting.services3.smartia-ai.com/vgw/report",
                                 "cdrEventInd": "cdr",
                                 "convEventInd": "conversation",
                                 "transcriptionEventInd": "transcription"
@@ -64,7 +64,7 @@
                                 }
                         ],
                         "conversation": {
-                                "url": "http://generic-nlp-adapter.services.smartia-ai.com/dialogflow",
+                                "url": "http://generic-nlp-adapter.services3.smartia-ai.com/dialogflow",
                                 "workspaceID": "xxxx",
                                 "password": "xxxx",
                                 "username": "xxxx"
@@ -102,7 +102,7 @@
                                 ]
                         },
                         "reporting": {
-                                "url": "http://vgw-reporting.services.smartia-ai.com/vgw/report",
+                                "url": "http://vgw-reporting.services3.smartia-ai.com/vgw/report",
                                 "cdrEventInd": "cdr",
                                 "convEventInd": "conversation",
                                 "transcriptionEventInd": "transcription"
@@ -118,7 +118,7 @@
                                 }
                         ],
                         "conversation": {
-                                "url": "http://generic-nlp-adapter.services.smartia-ai.com/dialogflow",
+                                "url": "http://generic-nlp-adapter.services3.smartia-ai.com/dialogflow",
                                 "workspaceID": "xxxx",
                                 "password": "xxxx",
                                 "username": "xxxx"
@@ -156,7 +156,7 @@
                                 ]
                         },
                         "reporting": {
-                                "url": "http://vgw-reporting.services.smartia-ai.com/vgw/report",
+                                "url": "http://vgw-reporting.services3.smartia-ai.com/vgw/report",
                                 "cdrEventInd": "cdr",
                                 "convEventInd": "conversation",
                                 "transcriptionEventInd": "transcription"
@@ -172,7 +172,7 @@
                                 }
                         ],
                         "conversation": {
-                                "url": "http://generic-nlp-adapter.services.smartia-ai.com/dialogflow",
+                                "url": "http://generic-nlp-adapter.services3.smartia-ai.com/dialogflow",
                                 "workspaceID": "xxxx",
                                 "password": "xxxx",
                                 "username": "xxxx"
@@ -210,7 +210,7 @@
                                 ]
                         },
                         "reporting": {
-                                "url": "http://vgw-reporting.services.smartia-ai.com/vgw/report",
+                                "url": "http://vgw-reporting.services3.smartia-ai.com/vgw/report",
                                 "cdrEventInd": "cdr",
                                 "convEventInd": "conversation",
                                 "transcriptionEventInd": "transcription"
@@ -226,7 +226,7 @@
                                 }
                         ],
                         "conversation": {
-                                "url": "http://generic-nlp-adapter.services.smartia-ai.com/dialogflow",
+                                "url": "http://generic-nlp-adapter.services3.smartia-ai.com/dialogflow",
                                 "workspaceID": "xxxx",
                                 "password": "xxxx",
                                 "username": "xxxx"
@@ -264,7 +264,7 @@
                                 ]
                         },
                         "reporting": {
-                                "url": "http://vgw-reporting.services.smartia-ai.com/vgw/report",
+                                "url": "http://vgw-reporting.services3.smartia-ai.com/vgw/report",
                                 "cdrEventInd": "cdr",
                                 "convEventInd": "conversation",
                                 "transcriptionEventInd": "transcription"
@@ -280,7 +280,7 @@
                                 }
                         ],
                         "conversation": {
-                                "url": "http://generic-nlp-adapter.services.smartia-ai.com/dialogflow",
+                                "url": "http://generic-nlp-adapter.services3.smartia-ai.com/dialogflow",
                                 "workspaceID": "xxxx",
                                 "password": "xxxx",
                                 "username": "xxxx"
@@ -318,7 +318,7 @@
                                 ]
                         },
                         "reporting": {
-                                "url": "http://vgw-reporting.services.smartia-ai.com/vgw/report",
+                                "url": "http://vgw-reporting.services3.smartia-ai.com/vgw/report",
                                 "cdrEventInd": "cdr",
                                 "convEventInd": "conversation",
                                 "transcriptionEventInd": "transcription"
@@ -334,7 +334,7 @@
                                 }
                         ],
                         "conversation": {
-                                "url": "http://generic-nlp-adapter.services.smartia-ai.com/dialogflow",
+                                "url": "http://generic-nlp-adapter.services3.smartia-ai.com/dialogflow",
                                 "workspaceID": "xxxx",
                                 "password": "xxxx",
                                 "username": "xxxx"
@@ -372,7 +372,7 @@
                                 ]
                         },
                         "reporting": {
-                                "url": "http://vgw-reporting.services.smartia-ai.com/vgw/report",
+                                "url": "http://vgw-reporting.services3.smartia-ai.com/vgw/report",
                                 "cdrEventInd": "cdr",
                                 "convEventInd": "conversation",
                                 "transcriptionEventInd": "transcription"
@@ -392,7 +392,7 @@
                                 }
                         ],
                         "conversation": {
-                                "url": "http://generic-nlp-adapter.services.smartia-ai.com/dialogflow",
+                                "url": "http://generic-nlp-adapter.services3.smartia-ai.com/dialogflow",
                                 "workspaceID": "xxxx",
                                 "password": "xxxx",
                                 "username": "xxxx"
@@ -430,7 +430,7 @@
                                 ]
                         },
                         "reporting": {
-                                "url": "http://vgw-reporting.services.smartia-ai.com/vgw/report",
+                                "url": "http://vgw-reporting.services3.smartia-ai.com/vgw/report",
                                 "cdrEventInd": "cdr",
                                 "convEventInd": "conversation",
                                 "transcriptionEventInd": "transcription"
@@ -450,7 +450,7 @@
                                 }
                         ],
                         "conversation": {
-                                "url": "http://generic-nlp-adapter.services.smartia-ai.com/dialogflow",
+                                "url": "http://generic-nlp-adapter.services3.smartia-ai.com/dialogflow",
                                 "workspaceID": "xxxx",
                                 "password": "xxxx",
                                 "username": "xxxx"
@@ -488,7 +488,7 @@
                                 ]
                         },
                         "reporting": {
-                                "url": "http://vgw-reporting.services.smartia-ai.com/vgw/report",
+                                "url": "http://vgw-reporting.services3.smartia-ai.com/vgw/report",
                                 "cdrEventInd": "cdr",
                                 "convEventInd": "conversation",
                                 "transcriptionEventInd": "transcription"
