@@ -34,12 +34,13 @@
   # tls_config:
   #   insecure_skip_verify: true
 
-- job_name: "vgw-gen"
-  scrape_interval: 1s
-  static_configs:
-    - targets: ['172.16.220.51:9083']
-  metrics_path: '/metrics/'
-  scheme: 'http'
+# - job_name: "vgw-gen"
+#   scrape_interval: 1s
+#   static_configs:
+#     - targets: ['172.16.220.51:9083']
+#   metrics_path: '/metrics/'
+#   scheme: 'http'
+
   # If you are using HTTPS, replace 'http' with 'https'
   # and provide the TLS configuration
   # scheme: 'https'
@@ -70,16 +71,16 @@
 #  metrics_path: '/metrics'
 #  scheme: 'http'
 
-- job_name: "nvidia-gpu-monitoring"
-  scrape_interval: 1s
-  static_configs:
-    - targets: ['10.0.0.5:8740']
-  metrics_path: '/metrics'
-  scheme: 'http'
-
-- job_name: "nvidia-node-monitoring"
-  scrape_interval: 1s
-  static_configs:
-    - targets: ['10.0.0.5:9100']
-  metrics_path: '/metrics'
-  scheme: 'http'
+# - job_name: "nvidia-gpu-monitoring"
+#   scrape_interval: 1s
+#   static_configs:
+#     - targets: ['10.0.0.5:8740']
+#   metrics_path: '/metrics'
+#   scheme: 'http'
+# 
+# - job_name: "nvidia-node-monitoring"
+#   scrape_interval: 1s
+#   static_configs:
+#     - targets: ['10.0.0.5:9100']
+#   metrics_path: '/metrics'
+#   scheme: 'http'
