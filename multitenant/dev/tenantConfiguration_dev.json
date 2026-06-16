@@ -76,7 +76,7 @@
                                             "name": "nvidia-stt",
                                             "providerType": "watson",
                                             "credentials": {
-                                                    "url": "http://172.16.220.46:3004/",
+                                                    "url": "http://172.16.220.46:3006/",
                                                     "username": "",
                                                     "password": ""
                                             }
