@@ -334,7 +334,7 @@
                                 }
                         ],
                         "conversation": {
-                                "url": "http://generic-nlp-adapter.services3.smartia-ai.com/dialogflow",
+                                "url": "http://generic-nlp-adapter2.services3.smartia-ai.com/dialogflow",
                                 "workspaceID": "xxxx",
                                 "password": "xxxx",
                                 "username": "xxxx"
@@ -450,7 +450,7 @@
                                 }
                         ],
                         "conversation": {
-                                "url": "http://generic-nlp-adapter.services3.smartia-ai.com/dialogflow",
+                                "url": "http://generic-nlp-adapter2.services3.smartia-ai.com/dialogflow",
                                 "workspaceID": "xxxx",
                                 "password": "xxxx",
                                 "username": "xxxx"
