@@ -59,8 +59,8 @@
                     "description": "SmartIA 20056-2 Chile",
                     "URIs": [
                             {
-                                    "name": "smartia_001-2_chile",
-                                    "uri": "smartia001-2chl"
+                                    "name": "smartia_002_chile",
+                                    "uri": "smartia002chl"
                             }
                     ],
                     "conversation": {
