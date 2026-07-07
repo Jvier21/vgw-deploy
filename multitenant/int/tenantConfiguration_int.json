@@ -10,7 +10,7 @@
                                 }
                         ],
                         "conversation": {
-                                "url": "http://generic-nlp-adapter.services3.smartia-ai.com/dialogflow",
+                                "url": "http://generic-nlp-adapter2.services3.smartia-ai.com/dialogflow",
                                 "workspaceID": "xxxx",
                                 "password": "xxxx",
                                 "username": "xxxx"
@@ -22,7 +22,7 @@
                                                 "name": "nvidia-stt",
                                                 "providerType": "watson",
                                                 "credentials": {
-                                                        "url": "http://172.16.220.46:3003/",
+                                                        "url": "http://172.16.220.46:3002/",
                                                         "username": "",
                                                         "password": ""
                                                 }
@@ -37,7 +37,7 @@
                                                 "name": "nvidia-tts",
                                                 "providerType": "watson",
                                                 "credentials": {
-                                                        "url": "http://172.16.220.46:3001/",
+                                                        "url": "http://172.16.220.46:3000/",
                                                         "username": "",
                                                         "password": ""
                                                 },
@@ -64,7 +64,7 @@
                                 }
                         ],
                         "conversation": {
-                                "url": "http://generic-nlp-adapter.services3.smartia-ai.com/dialogflow",
+                                "url": "http://generic-nlp-adapter2.services3.smartia-ai.com/dialogflow",
                                 "workspaceID": "xxxx",
                                 "password": "xxxx",
                                 "username": "xxxx"
@@ -76,7 +76,7 @@
                                                 "name": "nvidia-stt",
                                                 "providerType": "watson",
                                                 "credentials": {
-                                                        "url": "http://172.16.220.46:3003/",
+                                                        "url": "http://172.16.220.46:3002/",
                                                         "username": "",
                                                         "password": ""
                                                 }
@@ -91,7 +91,7 @@
                                                 "name": "nvidia-tts",
                                                 "providerType": "watson",
                                                 "credentials": {
-                                                        "url": "http://172.16.220.46:3001/",
+                                                        "url": "http://172.16.220.46:3000/",
                                                         "username": "",
                                                         "password": ""
                                                 },
@@ -118,7 +118,7 @@
                                 }
                         ],
                         "conversation": {
-                                "url": "http://generic-nlp-adapter.services3.smartia-ai.com/dialogflow",
+                                "url": "http://generic-nlp-adapter2.services3.smartia-ai.com/dialogflow",
                                 "workspaceID": "xxxx",
                                 "password": "xxxx",
                                 "username": "xxxx"
@@ -130,7 +130,7 @@
                                                 "name": "nvidia-stt",
                                                 "providerType": "watson",
                                                 "credentials": {
-                                                        "url": "http://172.16.220.46:3003/",
+                                                        "url": "http://172.16.220.46:3002/",
                                                         "username": "",
                                                         "password": ""
                                                 }
@@ -145,7 +145,7 @@
                                                 "name": "nvidia-tts",
                                                 "providerType": "watson",
                                                 "credentials": {
-                                                        "url": "http://172.16.220.46:3001/",
+                                                        "url": "http://172.16.220.46:3000/",
                                                         "username": "",
                                                         "password": ""
                                                 },
@@ -169,6 +169,60 @@
                                 {
                                         "name": "smartia_001_colombia",
                                         "uri": "smartia001col"
+                                }
+                        ],
+                        "conversation": {
+                                "url": "http://generic-nlp-adapter2.services3.smartia-ai.com/dialogflow",
+                                "workspaceID": "xxxx",
+                                "password": "xxxx",
+                                "username": "xxxx"
+                        },
+                        "stt": {
+                                "providerSelectionPolicy": "sequential",
+                                "providers": [
+                                        {
+                                                "name": "nvidia-stt",
+                                                "providerType": "watson",
+                                                "credentials": {
+                                                        "url": "http://172.16.220.46:3002/",
+                                                        "username": "",
+                                                        "password": ""
+                                                }
+                                        }
+                                ],
+                                "trackLatency": true
+                        },
+                        "tts": {
+                                "providerSelectionPolicy": "sequential",
+                                "providers": [
+                                        {
+                                                "name": "nvidia-tts",
+                                                "providerType": "watson",
+                                                "credentials": {
+                                                        "url": "http://172.16.220.46:3000/",
+                                                        "username": "",
+                                                        "password": ""
+                                                },
+                                                "config": {
+                                                        "voice": "tts_spanish.111"
+                                                }
+                                        }
+                                ]
+                        },
+                        "reporting": {
+                                "url": "http://vgw-reporting.services3.smartia-ai.com/vgw/report",
+                                "cdrEventInd": "cdr",
+                                "convEventInd": "conversation",
+                                "transcriptionEventInd": "transcription"
+                        }
+                },
+                {
+                        "tenantURI": "SmartIA 20057-2 Colombia",
+                        "description": "SmartIA 20057-2 Colombia",
+                        "URIs": [
+                                {
+                                        "name": "smartia_002_colombia",
+                                        "uri": "smartia002col"
                                 }
                         ],
                         "conversation": {
@@ -226,7 +280,7 @@
                                 }
                         ],
                         "conversation": {
-                                "url": "http://generic-nlp-adapter.services3.smartia-ai.com/dialogflow",
+                                "url": "http://generic-nlp-adapter2.services3.smartia-ai.com/dialogflow",
                                 "workspaceID": "xxxx",
                                 "password": "xxxx",
                                 "username": "xxxx"
@@ -238,7 +292,7 @@
                                                 "name": "nvidia-stt",
                                                 "providerType": "watson",
                                                 "credentials": {
-                                                        "url": "http://172.16.220.46:3003/",
+                                                        "url": "http://172.16.220.46:3002/",
                                                         "username": "",
                                                         "password": ""
                                                 }
@@ -253,7 +307,7 @@
                                                 "name": "nvidia-tts",
                                                 "providerType": "watson",
                                                 "credentials": {
-                                                        "url": "http://172.16.220.46:3001/",
+                                                        "url": "http://172.16.220.46:3000/",
                                                         "username": "",
                                                         "password": ""
                                                 },
@@ -280,7 +334,7 @@
                                 }
                         ],
                         "conversation": {
-                                "url": "http://generic-nlp-adapter.services3.smartia-ai.com/dialogflow",
+                                "url": "http://generic-nlp-adapter2.services3.smartia-ai.com/dialogflow",
                                 "workspaceID": "xxxx",
                                 "password": "xxxx",
                                 "username": "xxxx"
@@ -292,7 +346,7 @@
                                                 "name": "nvidia-stt",
                                                 "providerType": "watson",
                                                 "credentials": {
-                                                        "url": "http://172.16.220.46:3003/",
+                                                        "url": "http://172.16.220.46:3002/",
                                                         "username": "",
                                                         "password": ""
                                                 }
@@ -307,7 +361,7 @@
                                                 "name": "nvidia-tts",
                                                 "providerType": "watson",
                                                 "credentials": {
-                                                        "url": "http://172.16.220.46:3001/",
+                                                        "url": "http://172.16.220.46:3000/",
                                                         "username": "",
                                                         "password": ""
                                                 },
@@ -331,6 +385,60 @@
                                 {
                                         "name": "smartia_001_mexico",
                                         "uri": "smartia001mex"
+                                }
+                        ],
+                        "conversation": {
+                                "url": "http://generic-nlp-adapter2.services3.smartia-ai.com/dialogflow",
+                                "workspaceID": "xxxx",
+                                "password": "xxxx",
+                                "username": "xxxx"
+                        },
+                        "stt": {
+                                "providerSelectionPolicy": "sequential",
+                                "providers": [
+                                        {
+                                                "name": "nvidia-stt",
+                                                "providerType": "watson",
+                                                "credentials": {
+                                                        "url": "http://172.16.220.46:3002/",
+                                                        "username": "",
+                                                        "password": ""
+                                                }
+                                        }
+                                ],
+                                "trackLatency": true
+                        },
+                        "tts": {
+                                "providerSelectionPolicy": "sequential",
+                                "providers": [
+                                        {
+                                                "name": "nvidia-tts",
+                                                "providerType": "watson",
+                                                "credentials": {
+                                                        "url": "http://172.16.220.46:3000/",
+                                                        "username": "",
+                                                        "password": ""
+                                                },
+                                                "config": {
+                                                        "voice": "tts_spanish.111"
+                                                }
+                                        }
+                                ]
+                        },
+                        "reporting": {
+                                "url": "http://vgw-reporting.services3.smartia-ai.com/vgw/report",
+                                "cdrEventInd": "cdr",
+                                "convEventInd": "conversation",
+                                "transcriptionEventInd": "transcription"
+                        }
+                },
+                {
+                        "tenantURI": "SmartIA 20052-2 Mexico",
+                        "description": "SmartIA 20052-2 Mexico",
+                        "URIs": [
+                                {
+                                        "name": "smartia_002_mexico",
+                                        "uri": "smartia002mex"
                                 }
                         ],
                         "conversation": {
@@ -404,6 +512,60 @@
                                                 "name": "nvidia-stt",
                                                 "providerType": "watson",
                                                 "credentials": {
+                                                        "url": "http://172.16.220.46:3002/",
+                                                        "username": "",
+                                                        "password": ""
+                                                }
+                                        }
+                                ],
+                                "trackLatency": true
+                        },
+                        "tts": {
+                                "providerSelectionPolicy": "sequential",
+                                "providers": [
+                                        {
+                                                "name": "nvidia-tts",
+                                                "providerType": "watson",
+                                                "credentials": {
+                                                        "url": "http://172.16.220.46:3000/",
+                                                        "username": "",
+                                                        "password": ""
+                                                },
+                                                "config": {
+                                                        "voice": "tts_spanish.111"
+                                                }
+                                        }
+                                ]
+                        },
+                        "reporting": {
+                                "url": "http://vgw-reporting.services3.smartia-ai.com/vgw/report",
+                                "cdrEventInd": "cdr",
+                                "convEventInd": "conversation",
+                                "transcriptionEventInd": "transcription"
+                        }
+                },
+                {
+                        "tenantURI": "SmartIA 20507-2 Panama",
+                        "description": "SmartIA 20507-2 Panama",
+                        "URIs": [
+                                {
+                                        "name": "smartia_002_panama",
+                                        "uri": "smartia002pan"
+                                }
+                        ],
+                        "conversation": {
+                                "url": "http://generic-nlp-adapter2.services3.smartia-ai.com/dialogflow",
+                                "workspaceID": "xxxx",
+                                "password": "xxxx",
+                                "username": "xxxx"
+                        },
+                        "stt": {
+                                "providerSelectionPolicy": "sequential",
+                                "providers": [
+                                        {
+                                                "name": "nvidia-stt",
+                                                "providerType": "watson",
+                                                "credentials": {
                                                         "url": "http://172.16.220.46:3003/",
                                                         "username": "",
                                                         "password": ""
@@ -462,6 +624,60 @@
                                                 "name": "nvidia-stt",
                                                 "providerType": "watson",
                                                 "credentials": {
+                                                        "url": "http://172.16.220.46:3002/",
+                                                        "username": "",
+                                                        "password": ""
+                                                }
+                                        }
+                                ],
+                                "trackLatency": true
+                        },
+                        "tts": {
+                                "providerSelectionPolicy": "sequential",
+                                "providers": [
+                                        {
+                                                "name": "nvidia-tts",
+                                                "providerType": "watson",
+                                                "credentials": {
+                                                        "url": "http://172.16.220.46:3000/",
+                                                        "username": "",
+                                                        "password": ""
+                                                },
+                                                "config": {
+                                                        "voice": "tts_spanish.111"
+                                                }
+                                        }
+                                ]
+                        },
+                        "reporting": {
+                                "url": "http://vgw-reporting.services3.smartia-ai.com/vgw/report",
+                                "cdrEventInd": "cdr",
+                                "convEventInd": "conversation",
+                                "transcriptionEventInd": "transcription"
+                        }
+                },
+                {
+                        "tenantURI": "SmartIA 20503-2 El Salvador",
+                        "description": "SmartIA 20503-2 El Salvador",
+                        "URIs": [
+                                {
+                                        "name": "smartia_002_el_salvador",
+                                        "uri": "smartia002slv"
+                                }
+                        ],
+                        "conversation": {
+                                "url": "http://generic-nlp-adapter2.services3.smartia-ai.com/dialogflow",
+                                "workspaceID": "xxxx",
+                                "password": "xxxx",
+                                "username": "xxxx"
+                        },
+                        "stt": {
+                                "providerSelectionPolicy": "sequential",
+                                "providers": [
+                                        {
+                                                "name": "nvidia-stt",
+                                                "providerType": "watson",
+                                                "credentials": {
                                                         "url": "http://172.16.220.46:3003/",
                                                         "username": "",
                                                         "password": ""
@@ -493,8 +709,7 @@
                                 "convEventInd": "conversation",
                                 "transcriptionEventInd": "transcription"
                         }
-                }
-        
+                }        
 
         ]
 }
